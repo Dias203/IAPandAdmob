@@ -14,6 +14,7 @@ import com.eco.musicplayer.audioplayer.screens.activity.MainActivity
 import com.eco.musicplayer.audioplayer.screens.activity.SecondActivity
 import com.eco.musicplayer.audioplayer.screens.paywall.PaywallActivity
 
+// Duong Van Duc Master
 fun MainActivity.connectBilling() {
     connectBilling { checkIAP() }
 }
