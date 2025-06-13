@@ -1,0 +1,3 @@
+com.eco.musicplayer.audioplayer.music.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

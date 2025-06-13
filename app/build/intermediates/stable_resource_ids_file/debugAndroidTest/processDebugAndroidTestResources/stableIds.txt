@@ -1,0 +1,2 @@
+com.eco.musicplayer.audioplayer.music.test:style/WhiteBackgroundTheme = 0x7f010001
+com.eco.musicplayer.audioplayer.music.test:style/WhiteBackgroundDialogTheme = 0x7f010000

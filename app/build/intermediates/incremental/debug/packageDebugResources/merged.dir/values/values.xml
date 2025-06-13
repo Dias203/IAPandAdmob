@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="dark_charcoal">#313131</color>
+    <color name="gray">#999999</color>
+    <color name="red">#EF1616</color>
+    <color name="vivid_orange">#FF9616</color>
+    <color name="white">#FFFFFFFF</color>
+    <dimen name="_minus100sdp">-100dp</dimen>
+    <dimen name="_minus65sdp">-65dp</dimen>
+    <dimen name="_minus66sdp">-66dp</dimen>
+    <string name="_continue">Continue</string>
+    <string name="ad_attribution" translatable="false">Ad</string>
+    <string name="ad_inspector" translatable="false">Ad Inspector</string>
+    <string name="app">S2Note</string>
+    <string name="app_name">MusicPlayer</string>
+    <string name="best_exp">Best Experience</string>
+    <string name="best_offer">Best Offer</string>
+    <string name="black_friday_offer">Black Friday Offer!</string>
+    <string name="buy">Đăng ký</string>
+    <string name="can_show_ad">Hành động này có thể chứa quảng cáo</string>
+    <string name="continue_vie">Tiếp tục</string>
+    <string name="current_price">$27.99</string>
+    <string name="des_title">Auto-renew. Cancel anytime</string>
+    <string name="downgrade">Hạ cấp gói</string>
+    <string name="download_music">Tải nhạc</string>
+    <string name="finished">Hoàn tất</string>
+    <string name="free">Miễn phí</string>
+    <string name="full_text">
+    By continuing you agree to our Terms and Privacy policies:\n
+    \t•Subscription gives you access to Vivishow\'s premium features, all ads will be removed.\n
+    \t•Subscription plans are automatically renewed and can be canceled anytime in Subscriptions on Google Play.\n
+    \t•You won’t be charged if subscription is canceled before trial period ends.\n
+    \t•Subscription is not required to use Vivishow.
+    </string>
+    <string name="go_screen2">Chuyển đến màn hình 2</string>
+    <string name="install">Install</string>
+    <string name="life_time">Lifetime</string>
+    <string name="life_time_vie">Trọn đời</string>
+    <string name="loading">Ứng dụng đang tải xong trong: %1$d giây</string>
+    <string name="main_activity" translatable="false">Main Activity</string>
+    <string name="main_activity_text" translatable="false">
+        Thoát và quay lại ứng dụng để xem quảng cáo.
+    </string>
+    <string name="monthly">Monthly</string>
+    <string name="more_menu" translatable="false">More</string>
+    <string name="na_value">N/A</string>
+    <string name="not_available">%s (Không khả dụng)</string>
+    <string name="not_supported">Không hỗ trợ</string>
+    <string name="old_price">$32.99</string>
+    <string name="onetime_purchase">Onetime Purchase</string>
+    <string name="onetime_purchases">Thanh toán một lần: %s</string>
+    <string name="onetime_purchases2">Thanh toán một lần</string>
+    <string name="open_secondActivity">Chỉnh sửa ảnh</string>
+    <string name="period">per week after trial</string>
+    <string name="policy">By subscribing, you agree to our Privacy Policy</string>
+    <string name="privacy_policies">Privacy policies</string>
+    <string name="privacy_settings" translatable="false">Privacy Settings</string>
+    <string name="purchased">Đã mua</string>
+    <string name="remove_ads">Remove Ads for the</string>
+    <string name="secondactivity">SecondActivity</string>
+    <string name="seven_day">7-Day</string>
+    <string name="show_ads">Show ads</string>
+    <string name="show_reward">Mở khóa bộ lọc ảnh</string>
+    <string name="show_reward_interstitial">Xuất Video</string>
+    <string name="splash_activity_image_text" translatable="false">Splash Activity Image</string>
+    <string name="splash_activity_text" translatable="false">Chào mừng đến với \n<font color="#f27966">Ứng dụng Music Player</font></string>
+    <string name="start_free_trial">Bắt đầu dùng thử miễn phí</string>
+    <string name="sub_month">Gói tháng</string>
+    <string name="sub_week">Gói tuần</string>
+    <string name="sub_year">Gói năm</string>
+    <string name="terms">Terms</string>
+    <string name="text_day">ngày</string>
+    <string name="text_extend">Gia hạn sau</string>
+    <string name="text_month">tháng</string>
+    <string name="text_remove_ads">Remove Ads for the\nBest Experience</string>
+    <string name="text_sub">Free cho %s đầu</string>
+    <string name="text_week">tuần</string>
+    <string name="text_year">năm</string>
+    <string name="title">3-day free trial</string>
+    <string name="tv_may_display_ads">Hành động này có thể sẽ hiện quảng cáo</string>
+    <string name="unclear">Không rõ</string>
+    <string name="unknown_price">Giá không xác định</string>
+    <string name="upgrade">Nâng cấp gói</string>
+    <string name="using_limited">hoặc Sử dụng phiên bản giới hạn</string>
+    <style name="Base.Theme.DucDuongTrainningEco" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="CustomBottomSheetStyle" parent="Widget.MaterialComponents.BottomSheet">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="shapeAppearanceOverlay">@style/CustomShapeAppearanceBottomSheetDialog</item>
+    </style>
+    <style name="CustomShapeAppearanceBottomSheetDialog" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">16dp</item>
+        <item name="cornerSizeTopLeft">16dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+    <style name="Theme.DucDuongTrainningEco" parent="Base.Theme.DucDuongTrainningEco"/>
+</resources>

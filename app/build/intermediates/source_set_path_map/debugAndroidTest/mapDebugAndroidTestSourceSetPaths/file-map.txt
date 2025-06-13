@@ -1,0 +1,6 @@
+com.eco.musicplayer.audioplayer.music.test.app-tracing-1.2.0-0 C:\Users\Admin\.gradle\caches\transforms-4\48a62f599aac14fb30e780b8dd836e0c\transformed\tracing-1.2.0\res
+com.eco.musicplayer.audioplayer.music.test.app-core-1.6.1-1 C:\Users\Admin\.gradle\caches\transforms-4\50ecab7200a83f6cf0671055120c30f2\transformed\core-1.6.1\res
+com.eco.musicplayer.audioplayer.music.test.app-androidTest-2 G:\Study\Android Projects\Test\Google AdMob\SampleIAP\app\build\generated\res\resValues\androidTest\debug
+com.eco.musicplayer.audioplayer.music.test.app-mergeDebugAndroidTestResources-3 G:\Study\Android Projects\Test\Google AdMob\SampleIAP\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.eco.musicplayer.audioplayer.music.test.app-mergeDebugAndroidTestResources-4 G:\Study\Android Projects\Test\Google AdMob\SampleIAP\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.eco.musicplayer.audioplayer.music.test.app-debugAndroidTest-5 G:\Study\Android Projects\Test\Google AdMob\SampleIAP\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
