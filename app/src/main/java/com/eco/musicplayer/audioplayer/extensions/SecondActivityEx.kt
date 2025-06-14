@@ -1,5 +1,6 @@
 package com.eco.musicplayer.audioplayer.extensions
 
+import android.app.Activity
 import android.content.Intent
 import android.view.View
 import android.widget.Toast
@@ -7,6 +8,7 @@ import com.eco.musicplayer.audioplayer.admob.interstitial.AdmobInterstitialListe
 import com.eco.musicplayer.audioplayer.helpers.PurchasePrefsHelper
 import com.eco.musicplayer.audioplayer.screens.activity.MainActivity
 import com.eco.musicplayer.audioplayer.screens.activity.SecondActivity
+import com.eco.musicplayer.audioplayer.utils.DVDLog
 
 fun SecondActivity.connectBilling() {
     connectBilling { checkIAP() }
@@ -14,11 +16,16 @@ fun SecondActivity.connectBilling() {
 
 // endregion
 fun SecondActivity.checkIAP() {
+    val isPremiumFromIntent = intent.getBooleanExtra("isPremium", false)
+    isPremium = isPremiumFromIntent
+    PurchasePrefsHelper.saveIsPremiumStatus(this, isPremium)
+
     val cachedPremiumStatus = if (!getIsIAPChecked()) {
         PurchasePrefsHelper.isPremium(this)
     } else {
-        getIsPremium()
+        isPremium
     }
+    DVDLog.showLog("cachedPremiumStatus - $cachedPremiumStatus")
 
     if (cachedPremiumStatus) {
         binding.adFrame.visibility = View.GONE
@@ -47,6 +54,7 @@ fun SecondActivity.setOnClick() {
                     interstitialAd.showAd(this)
                 } else {
                     openMainActivity()
+                    admobOpenAppManager.unlock()
                 }
             }
         }
@@ -56,10 +64,12 @@ fun SecondActivity.setOnClick() {
 
 
 fun SecondActivity.openMainActivity() {
-    val intentAd = Intent(this, MainActivity::class.java).apply {
+    val intent = Intent(this, MainActivity::class.java).apply {
         addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
+        putExtra("isPremium", getIsPremium())
     }
-    startActivity(intentAd)
+    setResult(Activity.RESULT_OK, intent)
+    finish()
 }
 
 fun SecondActivity.registerListenerInterstitial() {

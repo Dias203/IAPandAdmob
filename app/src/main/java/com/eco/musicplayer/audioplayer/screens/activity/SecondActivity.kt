@@ -12,6 +12,7 @@ import com.eco.musicplayer.audioplayer.admob.banner.AdmobBanner
 import com.eco.musicplayer.audioplayer.admob.interstitial.AdmobInterstitial
 import com.eco.musicplayer.audioplayer.admob.native_ad.AdmobNative
 import com.eco.musicplayer.audioplayer.billing.InAppBillingManager
+import com.eco.musicplayer.audioplayer.extensions.checkIAP
 import com.eco.musicplayer.audioplayer.extensions.connectBilling
 import com.eco.musicplayer.audioplayer.extensions.loadAdMob
 import com.eco.musicplayer.audioplayer.extensions.onActivityDestroyed
@@ -38,13 +39,15 @@ class SecondActivity : BaseActivity(){
             insets
         }
         DVDLog.showLog("DVD")
-        connectBilling()
+        //connectBilling()
+        checkIAP()
         setOnClick()
     }
 
     override fun onResume() {
         super.onResume()
-        connectBilling()
+        //connectBilling()
+        checkIAP()
     }
 
     @SuppressLint("MissingSuperCall")

@@ -15,7 +15,7 @@ import com.eco.musicplayer.audioplayer.screens.activity.SecondActivity
 import com.eco.musicplayer.audioplayer.screens.paywall.PaywallActivity
 
 // Duong Van Duc Master
-fun MainActivity.connectBilling() {
+fun MainActivity.   connectBilling() {
     connectBilling { checkIAP() }
 }
 
@@ -159,9 +159,11 @@ private fun MainActivity.showToast(message: String) {
 }
 
 fun MainActivity.openSecondActivity() {
-    val intent = Intent(this@openSecondActivity, SecondActivity::class.java)
-    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
-    startActivity(intent)
+    val intent = Intent(this, SecondActivity::class.java).apply {
+        addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
+        putExtra("isPremium", getIsPremium())
+    }
+    startActivityForResult(intent, SECOND_ACTIVITY_REQUEST_CODE)
 }
 
 fun MainActivity.openPaywallActivity() {
