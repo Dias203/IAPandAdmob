@@ -61,6 +61,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.eco.musicplayer.audioplayer.BaseActivity
 import com.eco.musicplayer.audioplayer.MyApplication
+import com.eco.musicplayer.audioplayer.admob.app_open.AdmobAppOpenApplication
 import com.eco.musicplayer.audioplayer.admob.interstitial.AdmobInterstitial
 import com.eco.musicplayer.audioplayer.billing.InAppBillingManager
 import com.eco.musicplayer.audioplayer.billing.model.BaseProductDetails
@@ -68,14 +69,12 @@ import com.eco.musicplayer.audioplayer.constants.iap.PRODUCT_ID_LIFETIME
 import com.eco.musicplayer.audioplayer.constants.iap.PRODUCT_ID_WEEK
 import com.eco.musicplayer.audioplayer.constants.iap.PRODUCT_ID_YEAR
 import com.eco.musicplayer.audioplayer.music.databinding.ActivityPaywallBinding
+import org.koin.android.ext.android.inject
 
 class PaywallActivity : BaseActivity() {
     lateinit var binding: ActivityPaywallBinding
-    val inAppBillingManager: InAppBillingManager by lazy {
-        InAppBillingManager(this)
-    }
-    val interstitialAd by lazy { AdmobInterstitial(applicationContext) }
-    val admobOpenAppManager by lazy { (applicationContext as MyApplication).admobAppOpenManager }
+    val interstitialAd by inject<AdmobInterstitial>()
+    val admobOpenAppManager by inject<AdmobAppOpenApplication>()
     val detailsMap = hashMapOf<Int, BaseProductDetails?>()
     var selectPosition = 0
     val purchasedProducts = mutableSetOf<String>()
@@ -109,8 +108,8 @@ class PaywallActivity : BaseActivity() {
     }
 
     override fun onDestroy() {
-        inAppBillingManager.endConnectToGooglePlay()
-        inAppBillingManager.destroy()
+        iapManager.endConnectToGooglePlay()
+        iapManager.destroy()
         super.onDestroy()
     }
 }

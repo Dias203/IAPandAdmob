@@ -83,14 +83,14 @@ fun PaywallActivity.setOnClicks() {
                     purchasedProducts.firstOrNull { it in ConstantsProductID.subsListProduct }
                 if (currentSubscription != null && product.productId in ConstantsProductID.subsListProduct) {
                     // Gọi nâng cấp nếu đang có gói đăng ký
-                    inAppBillingManager.launchBillingFlowForUpgrade(
+                    iapManager.launchBillingFlowForUpgrade(
                         this@setOnClicks,
                         product,
                         currentSubscription
                     )
                 } else {
                     // Gọi mua mới nếu chưa có gói hoặc chọn gói lifetime
-                    inAppBillingManager.launchPurchase(this@setOnClicks, product)
+                    iapManager.launchPurchase(this@setOnClicks, product)
                 }
             }
         }

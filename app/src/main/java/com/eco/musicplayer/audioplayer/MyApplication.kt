@@ -5,14 +5,22 @@ import android.app.Application
 import android.os.Bundle
 import androidx.lifecycle.ProcessLifecycleOwner
 import com.eco.musicplayer.audioplayer.admob.app_open.AdmobAppOpenApplication
+import com.eco.musicplayer.audioplayer.app_modules.appModule
 import com.eco.musicplayer.audioplayer.utils.DVDLog
+import org.koin.android.ext.koin.androidContext
+import org.koin.core.context.startKoin
+import org.koin.java.KoinJavaComponent.inject
 
 class MyApplication : Application(), Application.ActivityLifecycleCallbacks {
 
-    val admobAppOpenManager by lazy {  AdmobAppOpenApplication(this, applicationContext) }
+    val admobAppOpenManager: AdmobAppOpenApplication by inject(AdmobAppOpenApplication::class.java)
 
     override fun onCreate() {
         super.onCreate()
+        startKoin {
+            androidContext(this@MyApplication)
+            modules(appModule)
+        }
         registerActivityLifecycleCallbacks(this)
 
         DVDLog.showLog("On Create")

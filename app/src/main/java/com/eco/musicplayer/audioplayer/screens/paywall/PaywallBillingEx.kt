@@ -15,7 +15,7 @@ import com.eco.musicplayer.audioplayer.helpers.PurchasePrefsHelper
 import com.eco.musicplayer.audioplayer.utils.DVDLog
 
 fun PaywallActivity.initBilling() {
-    inAppBillingManager.apply {
+    iapManager.apply {
         listener = createInAppBillingListener()
         productInfoList = listOf(
             ProductInfo(SUBS, PRODUCT_ID_WEEK),

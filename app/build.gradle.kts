@@ -67,4 +67,9 @@ dependencies {
     implementation ("androidx.lifecycle:lifecycle-process:2.8.3")
     implementation ("androidx.multidex:multidex:2.0.1")
     implementation ("com.intuit.sdp:sdp-android:1.1.1")
+
+    implementation (libs.koin.core)
+
+    // Koin Android (nếu dùng Android)
+    implementation (libs.koin.android)
 }

@@ -11,6 +11,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.eco.musicplayer.audioplayer.BaseActivity
 import com.eco.musicplayer.audioplayer.MyApplication
+import com.eco.musicplayer.audioplayer.admob.app_open.AdmobAppOpenApplication
 import com.eco.musicplayer.audioplayer.admob.banner.AdmobBanner
 import com.eco.musicplayer.audioplayer.admob.reward.AdmobReward
 import com.eco.musicplayer.audioplayer.admob.reward_interstitial.AdmobRewardInterstitial
@@ -23,13 +24,14 @@ import com.eco.musicplayer.audioplayer.helpers.PurchasePrefsHelper
 import com.eco.musicplayer.audioplayer.music.R
 import com.eco.musicplayer.audioplayer.music.databinding.ActivityMainBinding
 import com.eco.musicplayer.audioplayer.utils.DVDLog
+import org.koin.android.ext.android.inject
 
 class MainActivity : BaseActivity() {
     lateinit var binding: ActivityMainBinding
-    val admobOpenAppManager by lazy { (applicationContext as MyApplication).admobAppOpenManager }
-    val banner by lazy { AdmobBanner(applicationContext) }
-    val rewardAd by lazy { AdmobReward(applicationContext) }
-    val rewardIntersAd by lazy { AdmobRewardInterstitial(applicationContext) }
+    val admobOpenAppManager by inject<AdmobAppOpenApplication>()
+    val banner by inject<AdmobBanner>()
+    val rewardAd by inject<AdmobReward>()
+    val rewardIntersAd by inject<AdmobRewardInterstitial>()
     lateinit var secondActivityLauncher: ActivityResultLauncher<Intent>
     val SECOND_ACTIVITY_REQUEST_CODE = 100
 

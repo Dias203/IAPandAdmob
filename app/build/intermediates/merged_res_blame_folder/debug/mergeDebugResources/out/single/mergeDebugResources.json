@@ -1,322 +1,310 @@
 [
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_native_bg.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\native_bg.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_ic_premium.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/ic_premium.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_image_intro.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/image_intro.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_bg_discount.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\bg_discount.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_vector.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\vector.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_bg_unselected_paywall.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/bg_unselected_paywall.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\layout_activity_second.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\layout\\activity_second.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_ic_delete.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\ic_delete.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_bg_paywall_feature.jpg.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/bg_paywall_feature.jpg"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_bg_pro_text.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\bg_pro_text.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\layout_item_paywall.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\layout\\item_paywall.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_dismiss.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/dismiss.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_bg_unselected_paywall.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\bg_unselected_paywall.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_bg_subscription_selected.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/bg_subscription_selected.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_bg_selected_paywall_feature.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\bg_selected_paywall_feature.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/font_nunito_sans_regular.ttf.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/font/nunito_sans_regular.ttf"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\raw_paywall_rcv.json.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\raw\\paywall_rcv.json"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/layout_activity_paywall_feature.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/layout/activity_paywall_feature.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_progress_bar_drawable.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\progress_bar_drawable.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_ic_quality.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/ic_quality.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_image_vector.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\image_vector.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_bg_disable.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/bg_disable.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_logoapp.png.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/logoapp.png"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\layout_ad_unified.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\layout\\ad_unified.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_progress_bar_drawable.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/progress_bar_drawable.xml"
     },
     {
-        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-47:/layout_ad_unified.xml.flat",
-        "source": "com.eco.musicplayer.audioplayer.music.app-main-49:/layout/ad_unified.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_ic_arrow_back.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/ic_arrow_back.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_vector.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/vector.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\ic_launcher_background.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/xml_data_extraction_rules.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_logoapp.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\logoapp.png"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/font_roboto_regular.ttf.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/font/roboto_regular.ttf"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_bg_paywall_feature.jpg.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\bg_paywall_feature.jpg"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/font_roboto_medium.ttf.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/font/roboto_medium.ttf"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_bg_disable.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\bg_disable.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_app_name.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/app_name.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\font_nunitosans_italic.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\font\\nunitosans_italic.ttf"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\font_roboto_medium.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\font\\roboto_medium.ttf"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_ic_image.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/ic_image.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_bg_selected_paywall.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\bg_selected_paywall.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/layout_layout_bottom_sheet.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/layout/layout_bottom_sheet.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/font_nunito_sans_semi_bold.ttf.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/font/nunito_sans_semi_bold.ttf"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_bg_start_paywall_feature.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/bg_start_paywall_feature.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_app_name.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\app_name.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/layout_item_paywall.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/layout/item_paywall.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_dismiss.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\dismiss.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\layout_activity_main2.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\layout\\activity_main2.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_ic_checked_gold.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/ic_checked_gold.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\font_roboto_bold.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\font\\roboto_bold.ttf"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/layout_activity_splash.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/layout/activity_splash.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\layout_activity_paywall2.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\layout\\activity_paywall2.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/font_nunitosans_italic.ttf.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/font/nunitosans_italic.ttf"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\layout_activity_splash.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\layout\\activity_splash.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_bg_continue.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\bg_continue.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_ic_ad_blocker.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/ic_ad_blocker.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_bg_offer.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\bg_offer.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_ic_checked.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/ic_checked.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_ic_premium.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\ic_premium.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_bg_selected_paywall_feature.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/bg_selected_paywall_feature.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_ic_not_premium.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/ic_not_premium.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\layout_layout_bottom_sheet.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\layout\\layout_bottom_sheet.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_bg_continue.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/bg_continue.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_ic_image.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\ic_image.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_ic_checked_gold.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\ic_checked_gold.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_bg_claim_offer.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/bg_claim_offer.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\font_nunito_sans_semi_bold.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\font\\nunito_sans_semi_bold.ttf"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/layout_activity_main.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\font_nunito_sans_regular.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\font\\nunito_sans_regular.ttf"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/layout_activity_paywall.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/layout/activity_paywall.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\layout_dialog_full_screen.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\layout\\dialog_full_screen.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_bg_discount.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/bg_discount.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\font_roboto_regular.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\font\\roboto_regular.ttf"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_native_bg.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/native_bg.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\xml\\data_extraction_rules.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/layout_view_app_open_overlay.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/layout/view_app_open_overlay.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\font_nunito_sans_extra_bold.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\font\\nunito_sans_extra_bold.ttf"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_bg_ad.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/bg_ad.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_bg_subscription_default.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\bg_subscription_default.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_bg_offer.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/bg_offer.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_bg_open_app_overlay.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\bg_open_app_overlay.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\xml\\backup_rules.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\layout\\activity_main.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/font_nunitosans_variablefont.ttf.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/font/nunitosans_variablefont.ttf"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_ic_arrow_back.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\ic_arrow_back.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_image_vector.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/image_vector.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_ic_ad_blocker.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\ic_ad_blocker.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_bg_best_deal.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/bg_best_deal.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_ic_remove.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\ic_remove.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_ic_bolt.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/ic_bolt.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_ic_sparkle.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\ic_sparkle.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/layout_ad_unified.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/layout/ad_unified.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_ic_uncheck.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\ic_uncheck.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\font_nunitosans_variablefont.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\font\\nunitosans_variablefont.ttf"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_img_gift_1.png.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/img_gift_1.png"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_bg_ad.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\bg_ad.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_bg_selected_paywall.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/bg_selected_paywall.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_image_intro.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\image_intro.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_bg_open_app_overlay.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/bg_open_app_overlay.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_bg_paywall.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\bg_paywall.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/font_nunito_sans_extra_bold.ttf.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/font/nunito_sans_extra_bold.ttf"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\ic_launcher_foreground.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/raw_paywall_rcv.json.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/raw/paywall_rcv.json"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/font_nunito_sans_bold.ttf.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/font/nunito_sans_bold.ttf"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_bg_best_offer_tag.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\bg_best_offer_tag.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_ic_sparkle.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/ic_sparkle.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_img_gift_1.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\img_gift_1.png"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/font_roboto_bold.ttf.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/font/roboto_bold.ttf"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\font_nunito_sans_bold.ttf.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\font\\nunito_sans_bold.ttf"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/xml_backup_rules.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/xml/backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_ic_remove.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/ic_remove.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\layout_view_app_open_overlay.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\layout\\view_app_open_overlay.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_bg_subscription_default.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/bg_subscription_default.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_ic_bolt.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\ic_bolt.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_img_gift.png.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/img_gift.png"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_bg_best_deal.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\bg_best_deal.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_ic_delete.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/ic_delete.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_ic_checked.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\ic_checked.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_ic_uncheck.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/ic_uncheck.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\layout_activity_paywall_feature.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\layout\\activity_paywall_feature.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_bg_best_offer_tag.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/bg_best_offer_tag.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\layout_activity_paywall.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\layout\\activity_paywall.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_bg_paywall.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/bg_paywall.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_bg_claim_offer.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\bg_claim_offer.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/layout_activity_second.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/layout/activity_second.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_bg_subscription_selected.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\bg_subscription_selected.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/layout_dialog_full_screen.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/layout/dialog_full_screen.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_img_gift.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\img_gift.png"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_ic_not_premium.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\ic_not_premium.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_ic_quality.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\ic_quality.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-debug-47:\\drawable_bg_start_paywall_feature.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\drawable\\bg_start_paywall_feature.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-debug-53:/drawable_bg_pro_text.xml.flat",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-55:/drawable/bg_pro_text.xml"
     }
 ]

@@ -21,10 +21,11 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import org.koin.android.ext.android.inject
 
 open class BaseActivity : AppCompatActivity() {
-    val dialogFullScreen by lazy { DialogFullScreen(this) }
-    val iapManager by lazy { InAppBillingManager(applicationContext) }
+    val dialogFullScreen by inject<DialogFullScreen>()
+    val iapManager by inject<InAppBillingManager>()
     var isPremium = false
     var isIAPChecked = false
 
