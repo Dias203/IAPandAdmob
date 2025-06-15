@@ -1,9 +1,11 @@
 package com.eco.musicplayer.audioplayer.extensions
 
+import android.app.Activity
 import android.app.AlertDialog
 import android.content.Intent
 import android.view.View
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
 import com.eco.musicplayer.audioplayer.admob.banner.AdmobBannerListener
 import com.eco.musicplayer.audioplayer.admob.reward.AdmobRewardListener
@@ -158,12 +160,38 @@ private fun MainActivity.showToast(message: String) {
     Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
 }
 
-fun MainActivity.openSecondActivity() {
+/*fun MainActivity.openSecondActivity() {
     val intent = Intent(this, SecondActivity::class.java).apply {
         addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
         putExtra("isPremium", getIsPremium())
     }
     startActivityForResult(intent, SECOND_ACTIVITY_REQUEST_CODE)
+}*/
+
+fun MainActivity.registerStartActivityForResult() {
+    secondActivityLauncher = registerForActivityResult(
+        ActivityResultContracts.StartActivityForResult()
+    ) { result ->
+        if (result.resultCode == Activity.RESULT_OK) {
+            val data = result.data
+            val isPremium = data?.getBooleanExtra("isPremium", false) ?: false
+            this.isPremium = isPremium
+            PurchasePrefsHelper.saveIsPremiumStatus(this, isPremium)
+            checkIAP()
+        }
+    }
+}
+
+fun MainActivity.launchSecondActivity() {
+    val intent = Intent(this, SecondActivity::class.java).apply {
+        addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
+        putExtra("isPremium", getIsPremium())
+    }
+    secondActivityLauncher.launch(intent)
+}
+
+fun MainActivity.openSecondActivity() {
+    launchSecondActivity()
 }
 
 fun MainActivity.openPaywallActivity() {

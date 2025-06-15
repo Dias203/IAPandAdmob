@@ -4,6 +4,8 @@ import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
+import androidx.activity.result.ActivityResultLauncher
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -15,6 +17,7 @@ import com.eco.musicplayer.audioplayer.admob.reward_interstitial.AdmobRewardInte
 import com.eco.musicplayer.audioplayer.billing.InAppBillingManager
 import com.eco.musicplayer.audioplayer.extensions.checkIAP
 import com.eco.musicplayer.audioplayer.extensions.connectBilling
+import com.eco.musicplayer.audioplayer.extensions.registerStartActivityForResult
 import com.eco.musicplayer.audioplayer.extensions.setOnClick
 import com.eco.musicplayer.audioplayer.helpers.PurchasePrefsHelper
 import com.eco.musicplayer.audioplayer.music.R
@@ -27,6 +30,7 @@ class MainActivity : BaseActivity() {
     val banner by lazy { AdmobBanner(applicationContext) }
     val rewardAd by lazy { AdmobReward(applicationContext) }
     val rewardIntersAd by lazy { AdmobRewardInterstitial(applicationContext) }
+    lateinit var secondActivityLauncher: ActivityResultLauncher<Intent>
     val SECOND_ACTIVITY_REQUEST_CODE = 100
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,8 +41,11 @@ class MainActivity : BaseActivity() {
         connectBilling()
         setOnClick()
 
+        registerStartActivityForResult()
+
         DVDLog.showLog("DVD")
     }
+
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
