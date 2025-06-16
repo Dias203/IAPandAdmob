@@ -16,9 +16,9 @@ fun SecondActivity.connectBilling() {
 
 // endregion
 fun SecondActivity.checkIAP() {
-    val isPremiumFromIntent = intent.getBooleanExtra("isPremium", false)
+    /*val isPremiumFromIntent = intent.getBooleanExtra("isPremium", false)
     isPremium = isPremiumFromIntent
-    PurchasePrefsHelper.saveIsPremiumStatus(this, isPremium)
+    PurchasePrefsHelper.saveIsPremiumStatus(this, isPremium)*/
 
     val cachedPremiumStatus = if (!getIsIAPChecked()) {
         PurchasePrefsHelper.isPremium(this)

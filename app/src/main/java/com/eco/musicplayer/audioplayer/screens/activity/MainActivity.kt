@@ -17,7 +17,6 @@ import com.eco.musicplayer.audioplayer.admob.reward_interstitial.AdmobRewardInte
 import com.eco.musicplayer.audioplayer.billing.InAppBillingManager
 import com.eco.musicplayer.audioplayer.extensions.checkIAP
 import com.eco.musicplayer.audioplayer.extensions.connectBilling
-import com.eco.musicplayer.audioplayer.extensions.registerStartActivityForResult
 import com.eco.musicplayer.audioplayer.extensions.setOnClick
 import com.eco.musicplayer.audioplayer.helpers.PurchasePrefsHelper
 import com.eco.musicplayer.audioplayer.music.R
@@ -41,13 +40,13 @@ class MainActivity : BaseActivity() {
         connectBilling()
         setOnClick()
 
-        registerStartActivityForResult()
+        //registerStartActivityForResult()
 
         DVDLog.showLog("DVD")
     }
 
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+   /* override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == SECOND_ACTIVITY_REQUEST_CODE && resultCode == Activity.RESULT_OK) {
             val isPremium = data?.getBooleanExtra("isPremium", false) ?: false
@@ -55,7 +54,7 @@ class MainActivity : BaseActivity() {
             PurchasePrefsHelper.saveIsPremiumStatus(this, isPremium)
             checkIAP()
         }
-    }
+    }*/
 
     override fun onResume() {
         super.onResume()

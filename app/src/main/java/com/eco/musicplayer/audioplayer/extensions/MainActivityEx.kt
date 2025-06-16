@@ -17,7 +17,7 @@ import com.eco.musicplayer.audioplayer.screens.activity.SecondActivity
 import com.eco.musicplayer.audioplayer.screens.paywall.PaywallActivity
 
 // Duong Van Duc Master
-fun MainActivity.   connectBilling() {
+fun MainActivity.connectBilling() {
     connectBilling { checkIAP() }
 }
 
@@ -160,6 +160,16 @@ private fun MainActivity.showToast(message: String) {
     Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
 }
 
+fun MainActivity.openSecondActivity() {
+    val intent = Intent(this, SecondActivity::class.java).apply {
+        addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
+    }
+    startActivity(intent)
+}
+
+// region startActivityForResult
+
+// deprecated ===
 /*fun MainActivity.openSecondActivity() {
     val intent = Intent(this, SecondActivity::class.java).apply {
         addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
@@ -167,8 +177,9 @@ private fun MainActivity.showToast(message: String) {
     }
     startActivityForResult(intent, SECOND_ACTIVITY_REQUEST_CODE)
 }*/
+// ====
 
-fun MainActivity.registerStartActivityForResult() {
+/*fun MainActivity.registerStartActivityForResult() {
     secondActivityLauncher = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
     ) { result ->
@@ -182,17 +193,15 @@ fun MainActivity.registerStartActivityForResult() {
     }
 }
 
-fun MainActivity.launchSecondActivity() {
+fun MainActivity.openSecondActivity() {
     val intent = Intent(this, SecondActivity::class.java).apply {
         addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
         putExtra("isPremium", getIsPremium())
     }
     secondActivityLauncher.launch(intent)
-}
+}*/
 
-fun MainActivity.openSecondActivity() {
-    launchSecondActivity()
-}
+// endregion
 
 fun MainActivity.openPaywallActivity() {
     val intent = Intent(this@openPaywallActivity, PaywallActivity::class.java)

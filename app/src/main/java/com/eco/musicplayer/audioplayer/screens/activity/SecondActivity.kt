@@ -30,7 +30,6 @@ class SecondActivity : BaseActivity(){
     val interstitialAd by lazy { AdmobInterstitial(applicationContext) }
     val nativeAd by lazy { AdmobNative(applicationContext) }
     val admobOpenAppManager by lazy { (applicationContext as MyApplication).admobAppOpenManager }
-    private lateinit var prefsListener: SharedPreferences.OnSharedPreferenceChangeListener
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,15 +40,8 @@ class SecondActivity : BaseActivity(){
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        // Đăng ký listener cho SharedPreferences
-        prefsListener = SharedPreferences.OnSharedPreferenceChangeListener { _, key ->
-            if (key == PurchasePrefsHelper.KEY_PURCHASED_PRODUCTS) {
-                isPremium = PurchasePrefsHelper.isPremium(this)
-                checkIAP()
-            }
-        }
-        /*PurchasePrefsHelper.getPrefs(this).registerOnSharedPreferenceChangeListener(prefsListener)
-        DVDLog.showLog("DVD")*/
+        DVDLog.showLog("DVD")
+
         //connectBilling()
         checkIAP()
         setOnClick()
@@ -58,9 +50,6 @@ class SecondActivity : BaseActivity(){
     override fun onResume() {
         super.onResume()
         //connectBilling()
-        /*isPremium = PurchasePrefsHelper.isPremium(this)
-        DVDLog.showLog("onResume: isPremium=$isPremium")
-        checkIAP()*/
     }
 
     @SuppressLint("MissingSuperCall")
@@ -79,7 +68,6 @@ class SecondActivity : BaseActivity(){
 
     override fun onDestroy() {
         super.onDestroy()
-        //PurchasePrefsHelper.getPrefs(this).unregisterOnSharedPreferenceChangeListener(prefsListener)
         onActivityDestroyed()
     }
 }
