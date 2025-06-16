@@ -3,31 +3,37 @@ package com.eco.musicplayer.audioplayer.admob.app_open
 import android.app.Activity
 import android.app.Application
 import android.content.Context
-import android.content.SharedPreferences
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.ProcessLifecycleOwner
 import com.eco.musicplayer.audioplayer.constants.admob.ADS_OPEN_APP_UNIT_ID_DEFAULT
-import com.eco.musicplayer.audioplayer.helpers.PurchasePrefsHelper
 import com.eco.musicplayer.audioplayer.screens.splash.SplashActivity
+import com.example.openappads.admob.openapp.AdmobAppOpen
 import com.google.android.gms.ads.MobileAds
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class AdmobAppOpenApplication(
-    private val application: Application,
-    private val context: Context
+    private val application: Application, private val context: Context
 ) : DefaultLifecycleObserver {
 
-    val admobAppOpen by lazy {
+    private val admobAppOpen by lazy {
         AdmobAppOpen(context).apply {
-            setAdUnitID(ADS_OPEN_APP_UNIT_ID_DEFAULT)
+            setAdUnitId(ADS_OPEN_APP_UNIT_ID_DEFAULT)
             listener = object : AdMobAppOpenListener {
-                override fun onAdLoaded() {}
-                override fun onFailedAdLoad(errorMessage: String) {}
-                override fun onAdDismiss() { loadAd() }
+                override fun onAdLoaded() {
+                    //ECOLog.showLog("Ad loaded successfully")
+                }
+
+                override fun onFailedAdLoad(message: String) {
+                    //ECOLog.showLog("Ad failed to load: $message")
+                }
+
+                override fun onAdDismiss() {
+                    //ECOLog.showLog("Ad dismissed")
+                    loadAd()
+                }
             }
         }
     }
@@ -35,6 +41,8 @@ class AdmobAppOpenApplication(
     private var currentActivity: Activity? = null
     private var isLocked = false
     private var isMobileAdsInitialized = false
+
+
 
     fun initialize() {
         val backgroundScope = CoroutineScope(Dispatchers.IO)
@@ -56,26 +64,29 @@ class AdmobAppOpenApplication(
         isLocked = false
     }
 
+
     fun onActivityStarted(activity: Activity) {
+        //ECOLog.showLog("onActivityStarted: ${activity.javaClass.simpleName}")
         currentActivity = activity
     }
 
     fun onActivityDestroyed(activity: Activity) {
-        if(currentActivity == activity) {
+        //ECOLog.showLog("onActivityDestroyed: ${activity.javaClass.simpleName}")
+        if (currentActivity == activity) {
             currentActivity = null
         }
-        admobAppOpen.destroyAd()
     }
 
     override fun onStart(owner: LifecycleOwner) {
-        if(currentActivity is SplashActivity) return
-        if(admobAppOpen.isShowing()) return
-        if(PurchasePrefsHelper.isPremium(application)) return
-        if(isLocked) return
+        if (currentActivity is SplashActivity) return
+        if (admobAppOpen.isShowing()) return
+        if (isLocked) return
 
-        currentActivity?.let {
-            showAd(it)
-        }
+        showAd(currentActivity!!)
+    }
+
+    override fun onStop(owner: LifecycleOwner) {
+        //ECOLog.showLog("Application onStop")
     }
 
     private fun loadAd() {
@@ -83,12 +94,13 @@ class AdmobAppOpenApplication(
     }
 
     private fun showAd(activity: Activity) {
-        if(isLocked) return
+        if (isLocked) return
         admobAppOpen.attachOverlayToActivity(activity)
         admobAppOpen.showAd(activity) {}
     }
 
     override fun onDestroy(owner: LifecycleOwner) {
         super.onDestroy(owner)
+        admobAppOpen.destroyAd()
     }
 }

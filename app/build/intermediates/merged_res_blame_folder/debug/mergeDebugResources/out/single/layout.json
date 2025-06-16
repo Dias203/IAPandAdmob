@@ -1,54 +1,42 @@
 [
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-46:\\layout\\activity_main2.xml",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\layout\\activity_main2.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-46:/layout/activity_main.xml",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-49:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-46:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\layout\\activity_main.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-46:/layout/activity_splash.xml",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-49:/layout/activity_splash.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-46:\\layout\\item_paywall.xml",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\layout\\item_paywall.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-46:/layout/view_app_open_overlay.xml",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-49:/layout/view_app_open_overlay.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-46:\\layout\\activity_paywall2.xml",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\layout\\activity_paywall2.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-46:\\layout\\activity_paywall.xml",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\layout\\activity_paywall.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-46:\\layout\\activity_paywall_feature.xml",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\layout\\activity_paywall_feature.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-46:\\layout\\activity_second.xml",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\layout\\activity_second.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-46:\\layout\\activity_splash.xml",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\layout\\activity_splash.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-46:/layout/dialog_full_screen.xml",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-49:/layout/dialog_full_screen.xml"
     },
     {
         "merged": "com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-46:/layout/ad_unified.xml",
         "source": "com.eco.musicplayer.audioplayer.music.app-main-49:/layout/ad_unified.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-46:\\layout\\view_app_open_overlay.xml",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\layout\\view_app_open_overlay.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-46:/layout/layout_bottom_sheet.xml",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-49:/layout/layout_bottom_sheet.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-46:\\layout\\dialog_full_screen.xml",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\layout\\dialog_full_screen.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-46:/layout/activity_second.xml",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-49:/layout/activity_second.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-46:\\layout\\ad_unified.xml",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\layout\\ad_unified.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-46:/layout/item_paywall.xml",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-49:/layout/item_paywall.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-46:\\layout\\layout_bottom_sheet.xml",
-        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.eco.musicplayer.audioplayer.music.app-main-49:\\layout\\layout_bottom_sheet.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-46:/layout/activity_paywall.xml",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-49:/layout/activity_paywall.xml"
+    },
+    {
+        "merged": "com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-46:/layout/activity_paywall_feature.xml",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-49:/layout/activity_paywall_feature.xml"
     }
 ]

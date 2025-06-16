@@ -4,15 +4,13 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
-import com.eco.musicplayer.audioplayer.admob.app_open.AdmobAppOpen
 import com.eco.musicplayer.audioplayer.extensions.goToMainActivity
-import com.eco.musicplayer.audioplayer.extensions.goToPaywallActivity
 import com.eco.musicplayer.audioplayer.extensions.isPremium
 import com.eco.musicplayer.audioplayer.extensions.loadAppOpenAdSplash
-import com.eco.musicplayer.audioplayer.helpers.PurchasePrefsHelper
 import com.eco.musicplayer.audioplayer.music.R
 import com.eco.musicplayer.audioplayer.utils.DVDLog
 import com.eco.musicplayer.audioplayer.utils.JobSplash
+import com.example.openappads.admob.openapp.AdmobAppOpen
 
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity(), JobSplash.ProgressUpdated {

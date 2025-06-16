@@ -1,9 +1,12 @@
-package com.eco.musicplayer.audioplayer.admob.app_open
+package com.example.openappads.admob.openapp
 
 import android.app.Activity
 import android.content.Context
 import android.view.ViewGroup
+import com.eco.musicplayer.audioplayer.admob.app_open.AdMobAppOpenListener
+import com.eco.musicplayer.audioplayer.admob.app_open.AppOpenOverlay
 import com.eco.musicplayer.audioplayer.utils.CoolOffTime
+import com.eco.musicplayer.audioplayer.utils.DVDLog
 import com.google.android.gms.ads.AdError
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.FullScreenContentCallback
@@ -15,67 +18,61 @@ import java.util.Date
 class AdmobAppOpen(private val context: Context) {
     private var appOpenAd: AppOpenAd? = null
     var listener: AdMobAppOpenListener? = null
-    var adUnitId: String = ""
-    var isLoading = false
+    private var adUnitId: String = ""
+    var isLoadingAd = false
     var isShowingAd = false
-    private var loadTime = 0L
+    private var loadTime: Long = 0
     private var overlayView: AppOpenOverlay? = null
 
-    fun setAdUnitID(adUnitId: String) {
-        this.adUnitId = adUnitId
+    fun setAdUnitId(id: String) {
+        this.adUnitId = id
     }
 
-    private fun wasLoadTimeLessThanNHoursAgo(numHours: Long = 4): Boolean {
-        val dateDifference: Long = Date().time - loadTime
-        val numMilliSecondsPerHour: Long = 3600000
-        return dateDifference < numMilliSecondsPerHour * numHours
+    fun finishCoolOffTime() : Boolean {
+        return CoolOffTime.finishCoolOffTime()
     }
-
-    fun isLoaded() =  appOpenAd != null && wasLoadTimeLessThanNHoursAgo()
-
-
-    fun isShowing() = isShowingAd
-
-    fun finishCoolOffTime() = CoolOffTime.finishCoolOffTime()
 
     fun loadAd() {
-        if (isLoading || isLoaded()) return
-        isLoading = true
+        if (isLoadingAd || isLoaded()) return
+        isLoadingAd = true
         val adRequest = AdRequest.Builder().build()
         AppOpenAd.load(context, adUnitId, adRequest, object : AppOpenAdLoadCallback() {
             override fun onAdLoaded(ad: AppOpenAd) {
                 appOpenAd = ad
-                isLoading = false
+                isLoadingAd = false
                 loadTime = Date().time
                 listener?.onAdLoaded()
+                DVDLog.showLog("Open App Ad tải thành công")
             }
 
-            override fun onAdFailedToLoad(ad: LoadAdError) {
+            override fun onAdFailedToLoad(loadAdError: LoadAdError) {
                 appOpenAd = null
-                isLoading = false
-                listener?.onFailedAdLoad(ad.message)
+                isLoadingAd = false
+                listener?.onFailedAdLoad(loadAdError.message)
+                DVDLog.showLog("Open App Ad tải thất bại")
             }
         })
     }
 
-    fun showAd(activity: Activity, onComplete: () -> Unit) {
+    fun showAd(activity: Activity, complete: (() -> Unit)) {
         if (isShowingAd) return
 
-        if (!finishCoolOffTime()) return
+        if(!finishCoolOffTime()) return
 
         appOpenAd?.fullScreenContentCallback = object : FullScreenContentCallback() {
             override fun onAdDismissedFullScreenContent() {
                 appOpenAd = null
-                isLoading = false
+                isShowingAd = false
                 overlayView?.hide()
                 listener?.onAdDismiss()
-                onComplete()
+                complete()
             }
 
-            override fun onAdFailedToShowFullScreenContent(ad: AdError) {
+            override fun onAdFailedToShowFullScreenContent(adError: AdError) {
                 appOpenAd = null
                 isShowingAd = false
-                onComplete()
+                DVDLog.showLog(adError.message)
+                complete()
             }
 
             override fun onAdShowedFullScreenContent() {
@@ -93,11 +90,24 @@ class AdmobAppOpen(private val context: Context) {
         listener = null
     }
 
+    private fun wasLoadTimeLessThanNHoursAgo(numHours: Long = 4): Boolean {
+        val dateDifference: Long = Date().time - loadTime
+        val numMilliSecondsPerHour: Long = 3600000
+        return dateDifference < numMilliSecondsPerHour * numHours
+    }
+
+
+    fun isShowing() = isShowingAd
+
+    fun isLoaded(): Boolean {
+        return appOpenAd != null && wasLoadTimeLessThanNHoursAgo()
+    }
+
     fun attachOverlayToActivity(activity: Activity) {
         if (overlayView != null && overlayView!!.isAttachedToWindow) return
 
         overlayView = AppOpenOverlay(activity)
-        val layoutParams = ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT)
+        val layoutParams = ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.MATCH_PARENT)
         val decorView = activity.window.decorView as ViewGroup
         decorView.addView(overlayView, layoutParams)
     }

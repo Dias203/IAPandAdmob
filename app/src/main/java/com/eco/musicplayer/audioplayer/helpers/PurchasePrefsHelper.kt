@@ -6,12 +6,12 @@ import com.eco.musicplayer.audioplayer.utils.DVDLog
 
 object PurchasePrefsHelper {
     private const val PREF_NAME = "PurchasePrefs123"
-    private const val KEY_PURCHASED_PRODUCTS = "purchased_products"
+    const val KEY_PURCHASED_PRODUCTS = "purchased_products"
     private const val KEY_PURCHASED = "isPremium"
     private const val KEY_PURCHASED_SUBS = "key_purchased_subs"
     private const val KEY_PURCHASED_IN_APP = "key_purchased_in_app"
 
-    private fun getPrefs(context: Context): SharedPreferences {
+    fun getPrefs(context: Context): SharedPreferences {
         return context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
     }
 

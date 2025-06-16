@@ -1,6 +1,7 @@
 package com.eco.musicplayer.audioplayer.screens.activity
 
 import android.annotation.SuppressLint
+import android.content.SharedPreferences
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -18,6 +19,7 @@ import com.eco.musicplayer.audioplayer.extensions.loadAdMob
 import com.eco.musicplayer.audioplayer.extensions.onActivityDestroyed
 import com.eco.musicplayer.audioplayer.extensions.openMainActivity
 import com.eco.musicplayer.audioplayer.extensions.setOnClick
+import com.eco.musicplayer.audioplayer.helpers.PurchasePrefsHelper
 import com.eco.musicplayer.audioplayer.music.R
 import com.eco.musicplayer.audioplayer.music.databinding.ActivitySecondBinding
 import com.eco.musicplayer.audioplayer.utils.DVDLog
@@ -28,6 +30,7 @@ class SecondActivity : BaseActivity(){
     val interstitialAd by lazy { AdmobInterstitial(applicationContext) }
     val nativeAd by lazy { AdmobNative(applicationContext) }
     val admobOpenAppManager by lazy { (applicationContext as MyApplication).admobAppOpenManager }
+    private lateinit var prefsListener: SharedPreferences.OnSharedPreferenceChangeListener
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,7 +41,15 @@ class SecondActivity : BaseActivity(){
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        DVDLog.showLog("DVD")
+        // Đăng ký listener cho SharedPreferences
+        prefsListener = SharedPreferences.OnSharedPreferenceChangeListener { _, key ->
+            if (key == PurchasePrefsHelper.KEY_PURCHASED_PRODUCTS) {
+                isPremium = PurchasePrefsHelper.isPremium(this)
+                checkIAP()
+            }
+        }
+        /*PurchasePrefsHelper.getPrefs(this).registerOnSharedPreferenceChangeListener(prefsListener)
+        DVDLog.showLog("DVD")*/
         //connectBilling()
         checkIAP()
         setOnClick()
@@ -47,7 +58,9 @@ class SecondActivity : BaseActivity(){
     override fun onResume() {
         super.onResume()
         //connectBilling()
-        checkIAP()
+        /*isPremium = PurchasePrefsHelper.isPremium(this)
+        DVDLog.showLog("onResume: isPremium=$isPremium")
+        checkIAP()*/
     }
 
     @SuppressLint("MissingSuperCall")
@@ -66,6 +79,7 @@ class SecondActivity : BaseActivity(){
 
     override fun onDestroy() {
         super.onDestroy()
+        //PurchasePrefsHelper.getPrefs(this).unregisterOnSharedPreferenceChangeListener(prefsListener)
         onActivityDestroyed()
     }
 }

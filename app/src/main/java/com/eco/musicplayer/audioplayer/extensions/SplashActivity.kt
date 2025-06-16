@@ -19,7 +19,7 @@ fun SplashActivity.loadAppOpenAdSplash() {
         override fun onAdDismiss() {}
 
     }
-    admobAppOpen.setAdUnitID(ADS_OPEN_APP_UNIT_ID_SPLASH)
+    admobAppOpen.setAdUnitId(ADS_OPEN_APP_UNIT_ID_SPLASH)
     admobAppOpen.loadAd()
 }
 
