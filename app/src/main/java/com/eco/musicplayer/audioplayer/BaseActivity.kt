@@ -12,6 +12,7 @@ import com.eco.musicplayer.audioplayer.billing.InAppBillingListener
 import com.eco.musicplayer.audioplayer.billing.InAppBillingManager
 import com.eco.musicplayer.audioplayer.billing.model.BaseProductDetails
 import com.eco.musicplayer.audioplayer.billing.model.ProductInfo
+import com.eco.musicplayer.audioplayer.extensions.checkIAP
 import com.eco.musicplayer.audioplayer.helpers.DialogFullScreen
 import com.eco.musicplayer.audioplayer.helpers.PurchasePrefsHelper
 import com.eco.musicplayer.audioplayer.utils.DVDLog
@@ -92,12 +93,11 @@ open class BaseActivity : AppCompatActivity() {
         override fun onStartAcknowledgePurchase() {}
         override fun onPurchaseAcknowledged(productInfo: ProductInfo, purchase: Purchase) {
             isPremium = true
-            PurchasePrefsHelper.saveIsPremiumStatus(this@BaseActivity, true)
+            PurchasePrefsHelper.saveIsPremiumStatus(this@BaseActivity, isPremium)
             onCheckIAP()
         }
 
         override fun onUserCancelPurchase() {}
         override fun onPurchaseError(message: String, productInfo: ProductInfo) {}
     }
-
 }

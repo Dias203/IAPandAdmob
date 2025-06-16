@@ -32,6 +32,8 @@ fun MainActivity.checkIAP() {
         binding.icPremium.setColorFilter(ContextCompat.getColor(this@checkIAP, R.color.red))
         binding.adBannerContainer.visibility = View.GONE
         binding.loadingProgressBarBanner.visibility = View.GONE
+        banner.onDestroy()
+        rewardIntersAd.destroyAd()
     } else {
         binding.icPremium.setColorFilter(ContextCompat.getColor(this@checkIAP, R.color.gray))
         binding.loadingProgressBarBanner.visibility = View.VISIBLE
@@ -160,12 +162,13 @@ private fun MainActivity.showToast(message: String) {
     Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
 }
 
+/*
 fun MainActivity.openSecondActivity() {
     val intent = Intent(this, SecondActivity::class.java).apply {
         addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
     }
     startActivity(intent)
-}
+}*/
 
 // region startActivityForResult
 
@@ -179,7 +182,7 @@ fun MainActivity.openSecondActivity() {
 }*/
 // ====
 
-/*fun MainActivity.registerStartActivityForResult() {
+fun MainActivity.registerStartActivityForResult() {
     secondActivityLauncher = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
     ) { result ->
@@ -199,7 +202,7 @@ fun MainActivity.openSecondActivity() {
         putExtra("isPremium", getIsPremium())
     }
     secondActivityLauncher.launch(intent)
-}*/
+}
 
 // endregion
 

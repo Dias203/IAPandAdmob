@@ -1,5 +1,6 @@
 package com.eco.musicplayer.audioplayer.screens.paywall
 
+import android.app.AlertDialog
 import android.util.Log
 import android.widget.Toast
 import com.android.billingclient.api.Purchase
@@ -63,8 +64,8 @@ fun PaywallActivity.createInAppBillingListener() = object : InAppBillingListener
             if(productId != PRODUCT_ID_LIFETIME) {
                 updateItem()
             }
-            PurchasePrefsHelper.saveIsPremiumStatus(this@createInAppBillingListener, true)
-            showToast("Purchase successful: $productId")
+            PurchasePrefsHelper.saveIsPremiumStatus(this@createInAppBillingListener, isPremium)
+            showDialog()
         }
         isPremium = true
     }
@@ -86,6 +87,19 @@ fun PaywallActivity.createInAppBillingListener() = object : InAppBillingListener
         }
         updatePlanSelectionBasedOnPurchases()
         updateItem()
+    }
+
+    private fun showDialog(){
+        val builder = AlertDialog.Builder(this@createInAppBillingListener)
+        builder.setTitle("Chào mừng người dùng trở thành thành viên VIP")
+        builder.setMessage("Cảm ơn bạn đã mua gói premium! Chúc mừng bạn đã trở thành thành viên VIP.")
+
+        builder.setPositiveButton("OK") { dialog, _ ->
+            dialog.dismiss()
+        }
+
+        val dialog = builder.create()
+        dialog.show()
     }
 
     private fun PaywallActivity.showToast(message: String) =

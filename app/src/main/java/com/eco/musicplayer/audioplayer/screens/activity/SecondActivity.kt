@@ -42,14 +42,12 @@ class SecondActivity : BaseActivity(){
         }
         DVDLog.showLog("DVD")
 
-        //connectBilling()
         checkIAP()
         setOnClick()
     }
 
     override fun onResume() {
         super.onResume()
-        //connectBilling()
     }
 
     @SuppressLint("MissingSuperCall")

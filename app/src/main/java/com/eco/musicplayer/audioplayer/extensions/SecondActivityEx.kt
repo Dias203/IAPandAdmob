@@ -10,26 +10,26 @@ import com.eco.musicplayer.audioplayer.screens.activity.MainActivity
 import com.eco.musicplayer.audioplayer.screens.activity.SecondActivity
 import com.eco.musicplayer.audioplayer.utils.DVDLog
 
-fun SecondActivity.connectBilling() {
-    connectBilling { checkIAP() }
-}
-
-// endregion
 fun SecondActivity.checkIAP() {
-    /*val isPremiumFromIntent = intent.getBooleanExtra("isPremium", false)
+    val isPremiumFromIntent = intent.getBooleanExtra("isPremium", false)
     isPremium = isPremiumFromIntent
-    PurchasePrefsHelper.saveIsPremiumStatus(this, isPremium)*/
+    PurchasePrefsHelper.saveIsPremiumStatus(this, isPremium)
+
+    DVDLog.showLog("!getIsIAPChecked() - ${!getIsIAPChecked()} - getIsPremium - ${getIsPremium()} - PurchasePrefsHelper.isPremium(this) - ${PurchasePrefsHelper.isPremium(this)}")
 
     val cachedPremiumStatus = if (!getIsIAPChecked()) {
         PurchasePrefsHelper.isPremium(this)
     } else {
-        isPremium
+        getIsPremium()
     }
     DVDLog.showLog("cachedPremiumStatus - $cachedPremiumStatus")
 
     if (cachedPremiumStatus) {
         binding.adFrame.visibility = View.GONE
         binding.adBannerContainer.visibility = View.GONE
+        bannerAd.onDestroy()
+        interstitialAd.destroyAd()
+        nativeAd.onDestroy()
     } else {
         binding.adFrame.visibility = View.VISIBLE
         binding.adBannerContainer.visibility = View.VISIBLE
