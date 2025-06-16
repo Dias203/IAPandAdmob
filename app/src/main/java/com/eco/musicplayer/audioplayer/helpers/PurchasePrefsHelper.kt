@@ -16,7 +16,7 @@ object PurchasePrefsHelper {
     }
 
     fun saveIsPremiumStatus(context: Context, isPremium: Boolean) {
-        DVDLog.showLog("saveIsPremiumSUBS - $isPremium")
+        DVDLog.showLog("saveIsPremiumStatus - $isPremium")
         getPrefs(context).edit()
             .putBoolean(KEY_PURCHASED_PRODUCTS, isPremium)
             .apply()

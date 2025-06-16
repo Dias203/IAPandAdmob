@@ -95,6 +95,7 @@ open class BaseActivity : AppCompatActivity() {
         override fun onInAppBillingError(message: String) {}
         override fun onStartAcknowledgePurchase() {}
         override fun onPurchaseAcknowledged(productInfo: ProductInfo, purchase: Purchase) {
+            DVDLog.showLog("isPremium 13112003 - $isPremium")
             isPremium = true
             PurchasePrefsHelper.saveIsPremiumStatus(this@BaseActivity, isPremium)
             onCheckIAP()
