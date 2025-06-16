@@ -1,42 +1,42 @@
 [
     {
-        "merged": "com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-46:/layout/activity_main.xml",
-        "source": "com.eco.musicplayer.audioplayer.music.app-main-49:/layout/activity_main.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-51:/layout/ad_unified.xml",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-54:/layout/ad_unified.xml"
     },
     {
-        "merged": "com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-46:/layout/activity_splash.xml",
-        "source": "com.eco.musicplayer.audioplayer.music.app-main-49:/layout/activity_splash.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-51:/layout/activity_main.xml",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-54:/layout/activity_main.xml"
     },
     {
-        "merged": "com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-46:/layout/view_app_open_overlay.xml",
-        "source": "com.eco.musicplayer.audioplayer.music.app-main-49:/layout/view_app_open_overlay.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-51:/layout/activity_second.xml",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-54:/layout/activity_second.xml"
     },
     {
-        "merged": "com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-46:/layout/dialog_full_screen.xml",
-        "source": "com.eco.musicplayer.audioplayer.music.app-main-49:/layout/dialog_full_screen.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-51:/layout/activity_splash.xml",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-54:/layout/activity_splash.xml"
     },
     {
-        "merged": "com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-46:/layout/ad_unified.xml",
-        "source": "com.eco.musicplayer.audioplayer.music.app-main-49:/layout/ad_unified.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-51:/layout/activity_paywall_feature.xml",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-54:/layout/activity_paywall_feature.xml"
     },
     {
-        "merged": "com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-46:/layout/layout_bottom_sheet.xml",
-        "source": "com.eco.musicplayer.audioplayer.music.app-main-49:/layout/layout_bottom_sheet.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-51:/layout/item_paywall.xml",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-54:/layout/item_paywall.xml"
     },
     {
-        "merged": "com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-46:/layout/activity_second.xml",
-        "source": "com.eco.musicplayer.audioplayer.music.app-main-49:/layout/activity_second.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-51:/layout/view_app_open_overlay.xml",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-54:/layout/view_app_open_overlay.xml"
     },
     {
-        "merged": "com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-46:/layout/item_paywall.xml",
-        "source": "com.eco.musicplayer.audioplayer.music.app-main-49:/layout/item_paywall.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-51:/layout/activity_paywall.xml",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-54:/layout/activity_paywall.xml"
     },
     {
-        "merged": "com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-46:/layout/activity_paywall.xml",
-        "source": "com.eco.musicplayer.audioplayer.music.app-main-49:/layout/activity_paywall.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-51:/layout/dialog_full_screen.xml",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-54:/layout/dialog_full_screen.xml"
     },
     {
-        "merged": "com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-46:/layout/activity_paywall_feature.xml",
-        "source": "com.eco.musicplayer.audioplayer.music.app-main-49:/layout/activity_paywall_feature.xml"
+        "merged": "com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-51:/layout/layout_bottom_sheet.xml",
+        "source": "com.eco.musicplayer.audioplayer.music.app-main-54:/layout/layout_bottom_sheet.xml"
     }
 ]

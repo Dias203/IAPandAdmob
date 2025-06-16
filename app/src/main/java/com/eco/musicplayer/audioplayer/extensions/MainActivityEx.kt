@@ -17,10 +17,6 @@ import com.eco.musicplayer.audioplayer.screens.activity.SecondActivity
 import com.eco.musicplayer.audioplayer.screens.paywall.PaywallActivity
 
 // Duong Van Duc Master
-fun MainActivity.connectBilling() {
-    connectBilling { checkIAP() }
-}
-
 fun MainActivity.checkIAP() {
     val cachedPremiumStatus = if (!getIsIAPChecked()) {
         PurchasePrefsHelper.isPremium(this)
@@ -145,7 +141,7 @@ private fun MainActivity.registerListenerReward() {
         override fun onShowFullScreen(isDismiss: Boolean) {
             if (isDismiss) {
                 dialogFullScreen.hideDialog()
-                showToast("Mở khóa thành công!")
+                showToast("Tải nhạc thành công!")
                 admobOpenAppManager.unlock()
             } else {
                 dialogFullScreen.hideDialog()
@@ -161,26 +157,8 @@ private fun MainActivity.registerListenerReward() {
 private fun MainActivity.showToast(message: String) {
     Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
 }
-
-/*
-fun MainActivity.openSecondActivity() {
-    val intent = Intent(this, SecondActivity::class.java).apply {
-        addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
-    }
-    startActivity(intent)
-}*/
-
 // region startActivityForResult
 
-// deprecated ===
-/*fun MainActivity.openSecondActivity() {
-    val intent = Intent(this, SecondActivity::class.java).apply {
-        addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
-        putExtra("isPremium", getIsPremium())
-    }
-    startActivityForResult(intent, SECOND_ACTIVITY_REQUEST_CODE)
-}*/
-// ====
 
 fun MainActivity.registerStartActivityForResult() {
     secondActivityLauncher = registerForActivityResult(

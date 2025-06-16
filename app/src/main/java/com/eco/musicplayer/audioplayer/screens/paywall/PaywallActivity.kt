@@ -68,14 +68,14 @@ import com.eco.musicplayer.audioplayer.constants.iap.PRODUCT_ID_LIFETIME
 import com.eco.musicplayer.audioplayer.constants.iap.PRODUCT_ID_WEEK
 import com.eco.musicplayer.audioplayer.constants.iap.PRODUCT_ID_YEAR
 import com.eco.musicplayer.audioplayer.music.databinding.ActivityPaywallBinding
+import org.koin.android.ext.android.inject
 
 class PaywallActivity : BaseActivity() {
     lateinit var binding: ActivityPaywallBinding
     val inAppBillingManager: InAppBillingManager by lazy {
         InAppBillingManager(this)
     }
-    val interstitialAd by lazy { AdmobInterstitial(applicationContext) }
-    val admobOpenAppManager by lazy { (applicationContext as MyApplication).admobAppOpenManager }
+    val interstitialAd: AdmobInterstitial by inject()
     val detailsMap = hashMapOf<Int, BaseProductDetails?>()
     var selectPosition = 0
     val purchasedProducts = mutableSetOf<String>()

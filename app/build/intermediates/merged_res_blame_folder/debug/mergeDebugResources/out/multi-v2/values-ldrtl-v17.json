@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-45:/values-ldrtl-v17/values-ldrtl-v17.xml",
+            "outputFile": "com.eco.musicplayer.audioplayer.music.app-mergeDebugResources-50:/values-ldrtl-v17/values-ldrtl-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-4\\de5243d418ca86f6a27fbd66471f6510\\transformed\\material-1.12.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
+                    "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-4\\8229e607c6a9a2af3667683558af2175\\transformed\\material-1.12.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

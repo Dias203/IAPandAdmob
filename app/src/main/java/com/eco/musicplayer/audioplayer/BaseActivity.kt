@@ -5,6 +5,7 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import com.android.billingclient.api.Purchase
+import com.eco.musicplayer.audioplayer.admob.app_open.AdmobAppOpenApplication
 import com.eco.musicplayer.audioplayer.admob.interstitial.AdmobInterstitial
 import com.eco.musicplayer.audioplayer.admob.reward.AdmobReward
 import com.eco.musicplayer.audioplayer.admob.reward_interstitial.AdmobRewardInterstitial
@@ -22,10 +23,13 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import org.koin.android.ext.android.inject
+import org.koin.core.parameter.parametersOf
 
 open class BaseActivity : AppCompatActivity() {
-    val dialogFullScreen by lazy { DialogFullScreen(this) }
-    val iapManager by lazy { InAppBillingManager(applicationContext) }
+    val dialogFullScreen: DialogFullScreen by inject{ parametersOf(this) }
+    val iapManager: InAppBillingManager by inject()
+    val admobOpenAppManager: AdmobAppOpenApplication by inject()
     var isPremium = false
     var isIAPChecked = false
 
@@ -67,7 +71,7 @@ open class BaseActivity : AppCompatActivity() {
     fun getIsIAPChecked(): Boolean = isIAPChecked
 
 
-    fun connectBilling(onCheckIAP: () -> Unit) {
+    fun checkPurchased(onCheckIAP: () -> Unit) {
         iapManager.listener = createInAppBillingListener(onCheckIAP)
         iapManager.startConnectToGooglePlay()
     }
@@ -82,7 +86,6 @@ open class BaseActivity : AppCompatActivity() {
             isPremium = purchases.isNotEmpty()
             DVDLog.showLog(isPremium)
             isIAPChecked = true
-
 
             PurchasePrefsHelper.saveIsPremiumStatus(this@BaseActivity, isPremium)
 

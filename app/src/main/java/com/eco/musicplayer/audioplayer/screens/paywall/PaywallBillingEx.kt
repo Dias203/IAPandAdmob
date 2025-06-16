@@ -28,9 +28,7 @@ fun PaywallActivity.initBilling() {
 }
 
 fun PaywallActivity.createInAppBillingListener() = object : InAppBillingListener {
-    override fun onStartConnectToGooglePlay() {
-        showToast("Connecting to Google Play...")
-    }
+    override fun onStartConnectToGooglePlay() {}
 
 
     override fun onProductsLoaded(products: List<BaseProductDetails>) {

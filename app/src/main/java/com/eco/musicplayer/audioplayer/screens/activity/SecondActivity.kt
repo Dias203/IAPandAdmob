@@ -14,7 +14,6 @@ import com.eco.musicplayer.audioplayer.admob.interstitial.AdmobInterstitial
 import com.eco.musicplayer.audioplayer.admob.native_ad.AdmobNative
 import com.eco.musicplayer.audioplayer.billing.InAppBillingManager
 import com.eco.musicplayer.audioplayer.extensions.checkIAP
-import com.eco.musicplayer.audioplayer.extensions.connectBilling
 import com.eco.musicplayer.audioplayer.extensions.loadAdMob
 import com.eco.musicplayer.audioplayer.extensions.onActivityDestroyed
 import com.eco.musicplayer.audioplayer.extensions.openMainActivity
@@ -23,13 +22,13 @@ import com.eco.musicplayer.audioplayer.helpers.PurchasePrefsHelper
 import com.eco.musicplayer.audioplayer.music.R
 import com.eco.musicplayer.audioplayer.music.databinding.ActivitySecondBinding
 import com.eco.musicplayer.audioplayer.utils.DVDLog
+import org.koin.android.ext.android.inject
 
 class SecondActivity : BaseActivity(){
     lateinit var binding: ActivitySecondBinding
-    val bannerAd by lazy { AdmobBanner(this) }
-    val interstitialAd by lazy { AdmobInterstitial(applicationContext) }
-    val nativeAd by lazy { AdmobNative(applicationContext) }
-    val admobOpenAppManager by lazy { (applicationContext as MyApplication).admobAppOpenManager }
+    val bannerAd: AdmobBanner by inject()
+    val interstitialAd: AdmobInterstitial by inject()
+    val nativeAd: AdmobNative by inject()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,16 +45,12 @@ class SecondActivity : BaseActivity(){
         setOnClick()
     }
 
-    override fun onResume() {
-        super.onResume()
-    }
-
     @SuppressLint("MissingSuperCall")
     override fun onBackPressed() {
         dialogFullScreen.showDialog()
         admobOpenAppManager.locked()
         showAdWithTimeOut(6, interstitialAd) {
-            if(interstitialAd.isAdReady()) {
+            if(interstitialAd.isAdReady() && !getIsPremium()) {
                 interstitialAd.showAd(this)
             }
             else{
