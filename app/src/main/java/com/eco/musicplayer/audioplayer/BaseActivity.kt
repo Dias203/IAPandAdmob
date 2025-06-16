@@ -24,9 +24,12 @@ import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import org.koin.android.ext.android.inject
+import org.koin.core.context.loadKoinModules
+import org.koin.core.context.unloadKoinModules
 import org.koin.core.parameter.parametersOf
 
 open class BaseActivity : AppCompatActivity() {
+    //val dialogFullScreen by lazy { DialogFullScreen(this) }
     val dialogFullScreen: DialogFullScreen by inject{ parametersOf(this) }
     val iapManager: InAppBillingManager by inject()
     val admobOpenAppManager: AdmobAppOpenApplication by inject()
@@ -95,6 +98,7 @@ open class BaseActivity : AppCompatActivity() {
         override fun onInAppBillingError(message: String) {}
         override fun onStartAcknowledgePurchase() {}
         override fun onPurchaseAcknowledged(productInfo: ProductInfo, purchase: Purchase) {
+            isPremium = true
             PurchasePrefsHelper.saveIsPremiumStatus(this@BaseActivity, isPremium)
             onCheckIAP()
         }
